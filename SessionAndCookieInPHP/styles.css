@@ -1,0 +1,79 @@
+.bg
+{
+    background-color: rgb(130, 209, 240);
+}
+.h1d
+{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: chocolate;
+}
+.div1
+{
+    background-color: rgb(163, 218, 240);
+    display: inline-block; 
+    margin-left: 520px;
+    padding: 10px; 
+    border-radius: 5px;  
+    margin-top: 100px;
+}
+th, td { 
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.but
+{
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    background:darkcyan;
+    color: white;
+    border-radius:4px ;
+}
+.but:hover
+{
+    background:black;
+    color:white;
+}
+.tlb
+{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(30, 72, 100);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1
+{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: chocolate;
+}
+
+input::placeholder
+{
+    font-weight:2px;
+    color:rgb(214, 205, 205);
+}
+.but1
+{
+    margin-right: 5px; 
+    width:30px;
+    height: 30px;
+    font-size: 18px;
+ 
+    background:darkcyan;
+    color: white;
+    border-radius:4px ;
+}
+.but1:hover
+{
+    background:black;
+    color:white;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab_6</title>
+</head>
+<script>
+    function Validate()
+    {
+        var pattern = /[a-zA-z]+$/;
+        var a = 0;
+        var check = document.Regform.Name.value.match(pattern);
+        if (!check) {
+            alert("Please enter only Alphabets for Name");
+            return false;
+        }
+        var emailID = document.Regform.Email.value;
+        atpos = emailID.indexOf("@");
+        dotpos = emailID.indexOf(".");
+
+        if (atpos < 1 || (dotpos - atpos < 2)) {
+            alert("Please enter valid email ID!")
+            document.Regform.Email.focus();
+            return false;
+        }
+       if (document.Regform.Phone.value == "" || isNaN(document.Regform.Phone.value) ||
+            document.Regform.Phone.value.length != 10) {
+            alert("Please give a valid Contact Number!");
+            document.Regform.Phone.focus();
+            return false;
+        }
+        
+        return true;
+    }
+</script>
+<body class="bg">
+    <h1 class="h1d">Online Quiz</h1>
+    <div class="div1">
+        <h1 class="inf">Register Now</h1>
+    <form name="Regform" onsubmit="return(Validate())" action="Lab_6.php" method="POST" style="font-size: 23px;"> 
+        <table class="tlb">
+        <tr><td><label for="Name">Name:</label></td><td><input type="text" name="Name" size="30" style="font-size: 20px;" placeholder="Andrew Hatson" required></td></tr>
+        <tr><td><label for="Email">Email:</label></td><td><input type="text" name="Email" size="30" style="font-size: 20px;" placeholder="Andrew@gmail.com" required></td></tr>
+        <tr><td><label for="Phone">Mobile:</label></td><td><input type="tel" name="Phone" size="10" style="font-size: 20px;" required placeholder="1234567890"><br></td></tr>
+        </table>
+        <input type="submit" value="Submit" class="but">
+    </form>
+    </div>
+    <div style="padding-top: 255px;"></div>
+
+  <div style="background-color: beige;">
+    <footer style="text-align: center;">
+        <summary style="color: rgb(218, 106, 26); font-size: 22px;"><b>By B.Mohan Srinivasa Sarma 19BCN7015</b></summary>
+     </footer>
+</div>
+</body>
+</html>

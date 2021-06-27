@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body style="background-color: rgb(142, 207, 247);">
+  <h1 style="text-align: center; font-weight: bold;">Output</h1>
+<div ng-app="myApp" ng-controller="empCtrl"> 
+
+<table align="center"; border="2" style='font-size:22px'>
+  <tr><th>Product ID</th><th>Product Name</th><th>Cost</th><th>Category</th><tr>
+  <tr ng-repeat="x in names">
+    <td>{{ x.pid }}</td>
+    <td>{{ x.pname }}</td>
+    <td>{{ x.cost }}</td>
+    <td>{{ x.category }}</td>
+  </tr>
+</table>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('empCtrl', function($scope, $http) {
+    $http.get("product.php")
+    .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+.vertical-menu {
+    width: 200px;
+  }
+  
+  .vertical-menu a {
+    background-color: rgb(217, 253, 85);
+    color: rgb(10, 37, 187);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  body
+  {
+      background-color:azure;
+  }
+  .c
+  {
+      color: rgb(196, 50, 50);
+  }
+  .bg
+  {
+    background-color: rgb(204, 247, 247);
+  }
+  .x1
+  {
+    text-align: center; 
+    font-size: 45px; 
+    color:rgb(218, 104, 24);
+  }
+  .x2
+  {
+    font-size: 23px;
+  }
+  .x3
+  {
+    text-align: center; 
+    color:rgb(218, 104, 24);
+    font-size: 28px;
+  }
+ input
+  {
+    background-color:rgb(218, 104, 24);
+    color: white;
+    margin: 24px; 
+    width: 140px; 
+    height: 40px; 
+    font-size: 19px;
+    cursor: pointer;
+  }
+  .x4
+  {
+    background-color: rgb(233, 243, 242);
+  }
+  .x5
+  {
+    font-size: 25px; 
+    color:rgb(218, 104, 24);
+    padding-left: 24px;
+  }
+  .x6
+  {
+    background-color: azure; 
+    font-size: 22px; 
+    margin: 24px;
+  }
+  
+  .m1
+  {
+    background-color:rgb(218, 104, 24);
+    color: white;
+    width: 140px; 
+    height: 40px; 
+    font-size: 19px;
+    cursor: pointer;
+  }
+  .text
+  {
+    min-height: 710px; 
+    min-width: 670px; 
+    font-size: 20px;
+    max-width: 670px;
+    max-height: 710px;
+  }
+  .frm
+  {
+    float: left; 
+    width: 620px;
+    padding-left: 20px;
+    margin-left: 4px;
+    font-size: 20px; 
+    text-align: center ; 
+    background-color: white; 
+    padding-right: 40px; 
+    border:black; 
+    border-style:groove; 
+    border-width: thin;
+  }
+ 

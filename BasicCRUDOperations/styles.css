@@ -1,0 +1,102 @@
+.bg
+{
+    background-color: rgb(130, 209, 240);
+}
+.but
+{
+    width: 170px;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background:rgb(14, 163, 163);
+    color: white;
+    border-radius:6px ;
+}
+.but:hover
+{
+    background:black;
+    color:white;
+}
+
+.but1:hover
+{
+    background:black;
+    color:white;
+}
+.ki
+{
+    text-align: center; 
+    background-color:rgb(170, 226, 243);
+    margin-left:550px; 
+    margin-right:550px; 
+    padding-top:25px;
+    border-radius: 6px;
+}
+.h1d
+{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(15, 49, 163);
+}
+p
+{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+    text-align: center;
+    font-weight: bold;
+
+}
+.tlb
+{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(30, 72, 100);
+    margin-right: auto;
+     margin-left: auto;
+}
+.but1
+{
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 180px;
+    margin-top: 20px;
+    background:darkcyan;
+    color: rgb(248, 238, 238);
+    border-radius:4px ;
+}
+input::placeholder
+{
+    color: rgb(204, 201, 201);
+}
+.navbar
+{
+  background-color: rgb(181, 235, 235);  
+  width: fit-content;
+  margin-left:auto ;
+  margin-right: auto;
+  padding:10px;
+  border-radius: 9px;
+  border: none;
+}
+.navb
+{
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:transparent;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border:none;
+}
+.navb:hover
+{
+  background-color: rgb(24, 168, 224);
+  color:azure;
+  border-color:rgb(129, 116, 40);
+  border-radius: 5px;
+  border: initial;
+}

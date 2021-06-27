@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+         var picturearray=new Array(32);
+        function initialize()
+        {
+            for(var i=0;i<32;i++)
+            {
+                picturearray[i]=new Image();
+                picturearray[i].src="pictures/a"+(i+1)+".jpg";
+            }
+            document.getElementById('imagebox').innerHTML='';
+            document.getElementById('head').innerHTML='All Items'
+            for (let i = 0; i <32; i++) 
+            {
+                var image=document.createElement('img');
+                image.src=picturearray[i].src;
+                document.getElementById('imagebox').appendChild(image);
+            }
+            
+        }
+        function Cakes()
+        {
+            document.getElementById('imagebox').innerHTML='';
+            document.getElementById('head').innerHTML='Cakes';
+            for (let i = 0; i <8; i++) 
+            {
+                var image=document.createElement('img');
+                image.src=picturearray[i].src;
+                document.getElementById('imagebox').appendChild(image);
+
+            } 
+        }
+        
+        function Beverages()
+        {
+            document.getElementById('imagebox').innerHTML='';
+            document.getElementById('head').innerHTML='Beverages';
+            for (let i = 8; i <16; i++) 
+            {
+                var image=document.createElement('img');
+                image.src=picturearray[i].src;
+                document.getElementById('imagebox').appendChild(image);
+
+            } 
+        }
+        function Snacks()
+        {
+            document.getElementById('imagebox').innerHTML='';
+            document.getElementById('head').innerHTML='Snacks';
+            for (let i = 16; i <24; i++) 
+            {
+                var image=document.createElement('img');
+                image.src=picturearray[i].src;
+                document.getElementById('imagebox').appendChild(image);
+
+            } 
+        }
+        function CS()
+        {
+            document.getElementById('imagebox').innerHTML='';
+            document.getElementById('head').innerHTML='Chinese Special';
+            for (let i = 24; i <picturearray.length; i++) 
+            {
+                var image=document.createElement('img');
+                image.src=picturearray[i].src;
+                document.getElementById('imagebox').appendChild(image);
+
+            } 
+        }
+
+    </script>
+    <title>Lab_4</title>
+</head>
+<body onload="initialize()">
+    <div class="ss1">
+        <h1 class="ss2">The Hangouts...</h1>
+        <p class="ss3">Enjoy the Delicacy of our dishes</p>
+        <div class="navbar">
+            <input type="button" value="All" onclick="initialize()">
+            <input type="button" value="Cakes" onclick="Cakes()">
+            <input type="button" value="Beverages" onclick="Beverages()">
+            <input type="button" value="Snacks" onclick="Snacks()">
+            <input type="button" value="Chinese Special" onclick="CS()">
+        </div>
+    </div>
+    <div style="padding-top: 13px;"></div>
+    <div class='txts'id="head"></div>
+    <div style="padding-top: 8px;"></div>
+    <div id="imagebox" class="ss4">
+    </div>
+</body>
+
+<div style="padding-top: 40px;"></div>
+
+<div style="background-color: beige;">
+    <footer style="text-align: center;">
+        <summary style="color: rgb(218, 106, 26); font-size: 22px;"><b>By B.Mohan Srinivasa Sarma 19BCN7015</b></summary>
+     </footer>
+</div>
+</html>

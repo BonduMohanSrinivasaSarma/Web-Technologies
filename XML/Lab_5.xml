@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Library SYSTEM "Lab_5.dtd">
+<Library>
+    <Category>
+        <CSE>
+            <BookInfo>
+                <Book1>
+                    <Title>Java the Complete Reference</Title>
+                    <Author>Herbert schldit</Author>
+                    <Publisher>Oracle</Publisher>
+                    <Year_Of_Publication>2016</Year_Of_Publication>
+                </Book1>
+                <Book2>
+                    <Title>Fundamentals of Web Development</Title>
+                    <Author>Randy Connoly</Author>
+                    <Author>Ricardo Hoar</Author>
+                    <Publisher>Pearson</Publisher>
+                    <Year_Of_Publication>2016</Year_Of_Publication>
+                </Book2>
+            </BookInfo>
+        </CSE>
+        <ECE>
+            <BookInfo>
+                <Book1>
+                    <Title>Logic And Computer Design Fundamentals</Title>
+                    <Author>Morris Mano</Author>
+                    <Author>Charles R Kime</Author>
+                    <Author>Tom Martin</Author>
+                    <Publisher>Pearson</Publisher>
+                    <Year_Of_Publication>2013</Year_Of_Publication>
+                </Book1>
+            </BookInfo>
+        </ECE>
+        <MECH>
+            <BookInfo>
+                <Book1>
+                    <Title>Mechatronics</Title>
+                    <Author>W.Bolton</Author>
+                    <Publisher>Pearson</Publisher>
+                    <Year_Of_Publication>1995</Year_Of_Publication>
+                </Book1>
+                <Book2>
+                    <Title>Engineering Mechanics</Title>
+                    <Author>D.S.Kumar</Author>
+                    <Publisher>Pearson</Publisher>
+                    <Year_Of_Publication>2009</Year_Of_Publication>
+                </Book2>
+            </BookInfo>
+        </MECH>
+        
+    </Category>
+</Library>

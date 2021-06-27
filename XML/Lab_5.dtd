@@ -1,0 +1,13 @@
+<!ELEMENT Library (Category)>
+<!ELEMENT Category (CSE,ECE,MECH,GENERAL)>
+<!ELEMENT BookInfo (Book1,Book2*)>
+<!ELEMENT Book1 (Title,Author+,Publisher,Year_Of_Publication)>
+<!ELEMENT Book2 (Title,Author+,Publisher,Year_Of_Publication)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Year_Of_Publication (#PCDATA)>
+<!ELEMENT CSE (BookInfo)>
+<!ELEMENT ECE (BookInfo)>
+<!ELEMENT MECH (BookInfo)>
+<!ELEMENT GENERAL (BookInfo)>

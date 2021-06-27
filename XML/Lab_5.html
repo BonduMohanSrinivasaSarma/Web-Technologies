@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_5_19BCN7015</title>
+    <style>
+        .navbar
+        {
+            background-color: rgb(150, 245, 245);  
+            width: fit-content;
+            margin-left:auto ;
+            margin-right: auto;
+            padding:10px;
+            border-radius: 9px;
+            border: none;
+        }
+        input
+        {
+            font-size: 25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:transparent;
+            margin-left: 7px;
+            margin-right: 7px;
+            border-radius: 5px;
+            border:none;
+       }
+        h1
+        {
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2
+        {
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body
+        {
+            background-color: rgb(159, 216, 243);
+        }
+        .ihead
+        {
+            font-size: 23px;
+            color: chocolate;
+            font-weight: bolder;
+        }
+        
+    </style>
+    <script>
+        function Xml()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("print").innerHTML = this.responseText;
+              document.getElementById("info").innerHTML="Printing from XML file"
+        }
+
+     };
+        xhttp.open("GET", "Lab_5.xml", true);
+        xhttp.send();
+        }
+        function Json()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("print").innerHTML = this.responseText;
+            document.getElementById("info").innerHTML="Printing from Json file"
+        }
+
+     };
+        xhttp.open("GET", "Lab_5.json", true);
+        xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Library</h1>
+    <h2>Click XML or JSON to View Books</h2>
+    <div class="navbar">
+    <input type="button" value="getBooksFromXML" onclick="Xml()">
+    <input type="button" value="getBooksFromJSON" onclick="Json()">
+    </div>
+    <div id='info' class="ihead"></div>
+    <div style="padding-bottom: 30px;"></div>
+    <div id="print" style="font-size: 20px;">
+
+    </div>
+</body>
+</html>

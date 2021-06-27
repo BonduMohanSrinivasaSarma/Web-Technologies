@@ -1,0 +1,30 @@
+{
+    "Library":{
+        "Category":[
+            {
+                "GENERAL":{
+                    "BookInfo":[
+                        {
+                         "Book1":
+                            {
+                                "Title":"The Animal Farm",
+                                "Author":"George Orwell",
+                                "Publisher":"Harvill Secker",
+                                "Year_Of_Publication":"1945"
+                            }
+                        },
+                        {   
+                         "Book2":
+                            {
+                                "Title":"Life of Pi",
+                                "Author":"Yann Martel",
+                                "Publisher":"Random House of Canada",
+                                "Year_Of_Publication":"2001"
+                            } 
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

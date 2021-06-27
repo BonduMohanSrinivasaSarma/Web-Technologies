@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_styles.css">
+    <title>Registration Form</title>
+
+    <script type="text/javascript" src="my_file.js"></script>
+    <script>
+        function checkvalue(val)
+{
+    if(val==="AD")
+       document.getElementById('color').style.display='block';
+    else
+       document.getElementById('color').style.display='none'; 
+}
+    </script>
+    <style>
+        input
+        {
+            font-size: 24px;
+        }
+        th, td {
+        text-align: left;
+        padding: 8px;
+              }
+
+       
+
+        th {
+        background-color: #1f4920;
+        color: white;
+         }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form name="Register" onsubmit="return formvalidate();">
+        <table border="3" style="margin-right: auto; margin-left: auto; font-size: 24px;">
+            <tr><td><label for="Name">Name</label></td><td><input type="text" name="Name" size="50" ></td></tr>
+            <tr><td><label for="Gender">Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr><td><label for="College">College</label></td><td><input type="text" name="College" size="40"></td></tr>
+            <tr><td><label for="E-mail Address">E-mail Address</label></td><td><input type="email" size="28" name="mailid"></td></tr>
+            <tr><td><label for="Telephone">Telephone</label></td><td><input type="tel"   name="Telepho"></td></tr>
+            <tr><td><label for="Course">Course</label></td><td>
+                <select name="course" style="font-size: 23px;" onchange='checkvalue(this.value);'>
+                <option selected="" value="Default" style="font-size: 23px;">(Please select your Qualification)</option>
+                <option value="BT">B TECH</option>
+                <option value="MT">M TECH</option>
+                <option value="BC">BCA</option>
+                <option value="MC">MCA</option>
+                <option value="AD">Others</option>
+                <input type="text"id="color" width="30px" size="20" style='display:none;'/>
+                </select>
+                </td>
+            </tr>
+            <tr><td><input type="reset" name="reset" value="Reset"></td><td><input type="submit" name="submit" value="Submit"></td></tr>
+
+        </table>
+    </form>
+    <p id="demo"></p>
+</body>
+<div style="padding-top: 180px;"></div>
+
+<div style="background-color: beige;">
+    <footer style="text-align: center;">
+        <summary style="color: rgb(218, 106, 26); font-size: 22px;"><b>By B.Mohan Srinivasa Sarma 19BCN7015</b></summary>
+     </footer>
+</div>
+</html>
